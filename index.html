@@ -1,33 +1,84 @@
 <!DOCTYPE html>
 <html>
 
-	
 <head>
 	<title>final</title>
-	<title>My Web Page</title>
 	<link rel="stylesheet" type="text/css" href="css/COMIC.css">
 	<script type="text/javascript" src="js/COMIC.js"></script>
-   
+	<style>
+		.container {
+			position: relative;
+		}
+
+		.popup-container {
+			position: absolute;
+			top: 0;
+			right: 0;
+			padding: 20px;
+		}
+
+		.popup {
+			background-color: black;
+			border: 1px solid red;
+			padding: 20px;
+			max-width: 400px;
+			text-align: center;
+		}
+
+		.question-box {
+			position: fixed;
+			top: 50%;
+			right: 2.5%;
+			transform: translateY(-50%);
+			background-color: white;
+			border: 1px solid white;
+			padding: 20px;
+			max-width: 200px;
+			text-align: center;
+		}
+
+		.question {
+			font-size: 18px;
+			margin-bottom: 10px;
+		}
+
+		.options {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.option {
+			margin-bottom: 10px;
+			padding: 10px;
+			border: 1px solid red;
+			cursor: pointer;
+		}
+
+		.option:hover {
+			background-color: black;
+			color: red;
+		}
+	</style>
 </head>
 
 <body>
-	<img src = "plagues.svg" alt="My Plagues SVG"/>
-	<link rel="stylesheet" type="text/css" href="style.css">
 	<div class="container">
-		<div class="popup-container">
-			<div class="popup" id="popup1">
-				<p>What is this?</p>
-				<button onclick="chooseOption('option1')">Option 1</button>
-				<button onclick="chooseOption('option2')">Option 2</button>
-			</div>
+		<img src="plagues.svg" alt="My Plagues SVG">
 		</div>
-	</div>
-	<script src="script.js"></script>
-</body>
+		
+	<div class="container">
 	<img src = "stills/idle/idle-01.svg" alt="My idle-01 SVG"/>
 	<img src = "stills/idle/idle-02.svg" alt="My idle-02 SVG"/>
 	<img src = "stills/idle/idle-03.svg" alt="My idle-03 SVG"/>
 	<img src = "stills/idle/idle-04.svg" alt="My idle-04 SVG"/>
 	<img src = "stills/idle/idle-05.svg" alt="My idle-05 SVG"/>
+		</div>
+		<div class="question-box">
+			<div class="question">What is this?</div>
+			<div class="options">
+				<div class="option" onclick="selectOption('option1')">Option 1</div>
+				<div class="option" onclick="selectOption('option2')">Option 2</div>
+				<div class="option" onclick="selectOption('option3')">Option 3</div>
+			</div>
 
-	</html>
+		
