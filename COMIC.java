@@ -4,7 +4,7 @@ function selectOption(option) {
   var container = document.getElementById('container' + option.charAt(option.length-1));
 
   // Get the GIF element and show it
-  var gif = container.querySelector('img.gif');
+  var gif = container.querySelector('oh.gif');
   gif.style.display = 'block';
 
   // Hide the question box
