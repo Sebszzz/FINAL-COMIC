@@ -1,21 +1,12 @@
-let popupShown = false;
+function selectOption(option) {
+  // Get the question box and container element corresponding to the selected option
+  var questionBox = document.getElementById('question-box' + option.charAt(option.length-1));
+  var container = document.getElementById('container' + option.charAt(option.length-1));
 
-function showPopup() {
-  document.getElementById("popup1").style.display = "block";
-  popupShown = true;
+  // Get the GIF element and show it
+  var gif = container.querySelector('img.gif');
+  gif.style.display = 'block';
+
+  // Hide the question box
+  questionBox.style.display = 'none';
 }
-
-function chooseOption(option) {
-  if (option === "option1") {
-    alert("You chose option 1");
-  } else if (option === "option2") {
-    alert("You chose option 2");
-  }
-  document.getElementById("popup1").style.display = "none";
-}
-
-window.addEventListener("scroll", function () {
-  if (window.pageYOffset > 500 && !popupShown) {
-    showPopup();
-  }
-});
