@@ -1,0 +1,22 @@
+#question-box1 {
+    position: fixed;
+    top: 50%;
+    right: 2.5%;
+    transform: translateY(-50%);
+    background-color: white;
+    border: 1px solid white;
+    padding: 20px;
+    max-width: 200px;
+    text-align: center;
+}
+#question-box2 {
+    position: absolute;
+    top: 50%;
+    right: 2.5%;
+    transform: translateY(-50%);
+    background-color: white;
+    border: 1px solid white;
+    padding: 20px;
+    max-width: 200px;
+    text-align: center;
+}

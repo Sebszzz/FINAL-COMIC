@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>final</title>
+	<link rel="stylesheet" type="text/css" href="css/COMIC.css">
+	<script type="text/javascript" src="js/COMIC.js"></script>
+	<style>
+		.container {
+			position: relative;
+		}
+
+		.popup-container {
+			position: fixed;
+			top: 0;
+			right: 0;
+			padding: 20px;
+		}
+
+		.popup {
+			background-color: black;
+			border: 1px solid red;
+			padding: 20px;
+			max-width: 400px;
+			text-align: center;
+		}
+
+		.question-box {
+			position: fixed;
+			top: 50%;
+			right: 5%;
+			transform: translateY(-50%);
+			background-color: white;
+			border: 1px solid red;
+			padding: 20px;
+			max-width: 400px;
+			text-align: center;
+			font-family: "Gothic", monospace;
+		}
+
+		.question {
+			font-size: 18px;
+			margin-bottom: 10px;
+		}
+
+		.options {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.option {
+			margin-bottom: 10px;
+			padding: 10px;
+			border: 1px solid red;
+			cursor: pointer;
+		}
+
+		.option:hover {
+			background-color: black;
+			color: red;
+		}
+	</style>
+</head>
+
+<body>
+	  
+	<div class="container">
+		<img src="plagues.svg" alt="My Plagues SVG">
+		</div>
+		
+		<div class="container" id="container1">
+			<img src="stills/idle/idle-01.svg" alt="My idle-01 SVG">
+			
+			<div class="question-box" id="question-box1">
+				<div class="question">What is this?</div>
+				<div class="options">
+					<div class="option" onclick="showGif('oh.gif')">A Cat</div>
+					<div class="option" onclick="selectOption('option2')">A Crab</div>
+					<div class="option" onclick="selectOption('option3')">A Lobster</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container" id="container2">
+			<img src="stills/idle/idle-02.svg" alt="My idle-02 SVG">
+			<div class="question-box" id="question-box2">
+				<div class="question">What is this?</div>
+				<div class="options">
+					<div class="option" onclick="selectOption('option1')">A Bear</div>
+					<div class="option" onclick="selectOption('option2')">A Dog</div>
+					<div class="option" onclick="selectOption('option3')">An Elephant</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container" id="container3">
+			<img src="stills/idle/idle-03.svg" alt="My idle-03 SVG">
+			<div class="question-box" id="question-box3">
+				<div class="question">What is this?</div>
+				<div class="options">
+					<div class="option" onclick="selectOption('option1')">People Dancing</div>
+					<div class="option" onclick="selectOption('option2')">People Hugging</div>
+					<div class="option" onclick="selectOption('option3')">People Fighting</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container" id="container4">
+			<img src="stills/idle/idle-04.svg" alt="My idle-04 SVG">
+			<div class="question-box" id="question-box4">
+				<div class="question">What is this?</div>
+				<div class="options">
+					<div class="option" onclick="selectOption('option1')">Animal Hide</div>
+					<div class="option" onclick="selectOption('option2')">Skin</div>
+					<div class="option" onclick="selectOption('option3')">A Rug</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container" id="container5">
+			<img src="stills/idle/idle-05.svg" alt="My idle-05 SVG">
+			<div class="question-box" id="question-box5">
+				<div class="question">What is this?</div>
+				<div class="options">
+					<div class="option" onclick="selectOption('option1')">A Bat</div>
+					<div class="option" onclick="selectOption('option2')">A Butterfly</div>
+					<div class="option" onclick="selectOption('option3')">A Moth</div>
+				</div>
+			</div>
+		</div>
+		<div class="container" id="container6">
+			<img src="C:\Users\beans\Desktop\COMIC\stills\diag.svg" alt="My diag SVG">
+		</div>
+		  
