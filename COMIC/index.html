@@ -11,7 +11,7 @@
 		}
 
 		.popup-container {
-			position: absolute;
+			position: fixed;
 			top: 0;
 			right: 0;
 			padding: 20px;
@@ -66,19 +66,22 @@
 		<img src="plagues.svg" alt="My Plagues SVG">
 		</div>
 		
-	<div class="container">
-	<img src = "stills/idle/idle-01.svg" alt="My idle-01 SVG"/> <onmouseover= "stills/spin/spin-01.svg"/>
+		<div class="container" id="container1">
+			<img src="stills/idle/idle-01.svg" alt="My idle-01 SVG">
+			<div class="question-box" id="question-box1">
+				<div class="question">What is this?</div>
+				<div class="options">
+					<div class="option" onclick="selectOption('option1')">Option 1</div>
+					<div class="option" onclick="selectOption('option2')">Option 2</div>
+					<div class="option" onclick="selectOption('option3')">Option 3</div>
+				</div>
+			</div>
+		</div>
+		
 	<img src = "stills/idle/idle-02.svg" alt="My idle-02 SVG"/>
 	<img src = "stills/idle/idle-03.svg" alt="My idle-03 SVG"/>
 	<img src = "stills/idle/idle-04.svg" alt="My idle-04 SVG"/>
 	<img src = "stills/idle/idle-05.svg" alt="My idle-05 SVG"/>
 		</div>
-		<div class="question-box">
-			<div class="question">What is this?</div>
-			<div class="options">
-				<div class="option" onclick="selectOption('option1')">Option 1</div>
-				<div class="option" onclick="selectOption('option2')">Option 2</div>
-				<div class="option" onclick="selectOption('option3')">Option 3</div>
-			</div>
 
 		
