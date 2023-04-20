@@ -31,7 +31,7 @@
 			right: 5%;
 			transform: translateY(-50%);
 			background-color: white;
-			border: 1px solid white;
+			border: 1px solid red;
 			padding: 20px;
 			max-width: 400px;
 			text-align: center;
@@ -63,10 +63,6 @@
 </head>
 
 <body>
-	<div class="icon">
-		<img class="idle" src="idle-01.svg" alt="Idle Icon">
-		<img class="spin" src="spin-01.svg" alt="Spin Icon">
-	  </div>
 	  
 	<div class="container">
 		<img src="plagues.svg" alt="My Plagues SVG">
@@ -74,12 +70,13 @@
 		
 		<div class="container" id="container1">
 			<img src="stills/idle/idle-01.svg" alt="My idle-01 SVG">
+			
 			<div class="question-box" id="question-box1">
 				<div class="question">What is this?</div>
 				<div class="options">
-					<div class="option" onclick="selectOption('option1')">Option 1</div>
-					<div class="option" onclick="selectOption('option2')">Option 2</div>
-					<div class="option" onclick="selectOption('option3')">Option 3</div>
+					<div class="option" onclick="showGif('oh.gif')">A Cat</div>
+					<div class="option" onclick="selectOption('option2')">A Crab</div>
+					<div class="option" onclick="selectOption('option3')">A Lobster</div>
 				</div>
 			</div>
 		</div>
@@ -89,9 +86,9 @@
 			<div class="question-box" id="question-box2">
 				<div class="question">What is this?</div>
 				<div class="options">
-					<div class="option" onclick="selectOption('option1')">Option 1</div>
-					<div class="option" onclick="selectOption('option2')">Option 2</div>
-					<div class="option" onclick="selectOption('option3')">Option 3</div>
+					<div class="option" onclick="selectOption('option1')">A Bear</div>
+					<div class="option" onclick="selectOption('option2')">A Dog</div>
+					<div class="option" onclick="selectOption('option3')">An Elephant</div>
 				</div>
 			</div>
 		</div>
@@ -101,9 +98,9 @@
 			<div class="question-box" id="question-box3">
 				<div class="question">What is this?</div>
 				<div class="options">
-					<div class="option" onclick="selectOption('option1')">Option 1</div>
-					<div class="option" onclick="selectOption('option2')">Option 2</div>
-					<div class="option" onclick="selectOption('option3')">Option 3</div>
+					<div class="option" onclick="selectOption('option1')">People Dancing</div>
+					<div class="option" onclick="selectOption('option2')">People Hugging</div>
+					<div class="option" onclick="selectOption('option3')">People Fighting</div>
 				</div>
 			</div>
 		</div>
@@ -113,9 +110,9 @@
 			<div class="question-box" id="question-box4">
 				<div class="question">What is this?</div>
 				<div class="options">
-					<div class="option" onclick="selectOption('option1')">Option 1</div>
-					<div class="option" onclick="selectOption('option2')">Option 2</div>
-					<div class="option" onclick="selectOption('option3')">Option 3</div>
+					<div class="option" onclick="selectOption('option1')">Animal Hide</div>
+					<div class="option" onclick="selectOption('option2')">Skin</div>
+					<div class="option" onclick="selectOption('option3')">A Rug</div>
 				</div>
 			</div>
 		</div>
@@ -125,10 +122,13 @@
 			<div class="question-box" id="question-box5">
 				<div class="question">What is this?</div>
 				<div class="options">
-					<div class="option" onclick="selectOption('option1')">Option 1</div>
-					<div class="option" onclick="selectOption('option2')">Option 2</div>
-					<div class="option" onclick="selectOption('option3')">Option 3</div>
+					<div class="option" onclick="selectOption('option1')">A Bat</div>
+					<div class="option" onclick="selectOption('option2')">A Butterfly</div>
+					<div class="option" onclick="selectOption('option3')">A Moth</div>
 				</div>
 			</div>
 		</div>
-		
+		<div class="container" id="container6">
+			<img src="C:\Users\beans\Desktop\COMIC\stills\diag.svg" alt="My diag SVG">
+		</div>
+		  
