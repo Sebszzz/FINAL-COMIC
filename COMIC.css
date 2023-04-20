@@ -1,19 +1,76 @@
-.container {
+#question-box1 {
+    position: absolute;
+    top: 50%;
+    right: 2.5%;
+    transform: translateY(-50%);
+    background-color: white;
+    border: 1px solid white;
+    padding: 20px;
+    max-width: 200px;
+    text-align: center;
+}
+#question-box2 {
+    position: absolute;
+    top: 50%;
+    right: 2.5%;
+    transform: translateY(-50%);
+    background-color: white;
+    border: 1px solid white;
+    padding: 20px;
+    max-width: 200px;
+    text-align: center;
+}
+#question-box3 {
+    position: absolute;
+    top: 50%;
+    right: 2.5%;
+    transform: translateY(-50%);
+    background-color: white;
+    border: 1px solid white;
+    padding: 20px;
+    max-width: 200px;
+    text-align: center;
+}
+#question-box4 {
+    position: absolute;
+    top: 50%;
+    right: 2.5%;
+    transform: translateY(-50%);
+    background-color: white;
+    border: 1px solid white;
+    padding: 20px;
+    max-width: 200px;
+    text-align: center;
+}
+#question-box5 {
+    position: absolute;
+    top: 50%;
+    right: 2.5%;
+    transform: translateY(-50%);
+    background-color: white;
+    border: 1px solid white;
+    padding: 20px;
+    max-width: 200px;
+    text-align: center;
+}
+.icon {
 	position: relative;
+	width: 50px; /* Set the width and height of the container */
+	height: 50px;
   }
   
-  .popup-container {
+  .icon .spin {
 	position: absolute;
 	top: 0;
-	right: 0;
-	padding: 20px;
+	left: 0;
+	opacity: 0; /* Hide the spin image by default */
   }
   
-  .popup {
-	background-color: black;
-	border: 1px solid black;
-	padding: 20px;
-	max-width: 400px;
-	text-align: center;
+  .icon:hover .idle {
+	opacity: 0; /* Hide the idle image on hover */
+  }
+  
+  .icon:hover .spin {
+	opacity: 1; /* Show the spin image on hover */
   }
   
